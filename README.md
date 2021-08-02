@@ -73,3 +73,13 @@ sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 ```
+Install Lidar
+```
+git clone https://github.com/YDLIDAR/YDLidar-SDK
+cd YDLidar-SDK
+sudo apt install swig -y
+sudo python3 setup.py install
+cd startup
+sudo ./initenv.sh
+
+```
