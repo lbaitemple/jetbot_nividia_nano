@@ -47,4 +47,8 @@ sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 #### Install jupyter lab
 ```
 sudo apt install curl -y
+git clone https://github.com/lbaitemple/jetbot_nividia_nano
+mv jetbot_nividia_nano jetbot
+cd jetbot
+./jupyter.sh 
 ```
