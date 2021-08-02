@@ -17,7 +17,7 @@ sudo raspi-config
 ```
 Pytorch Install
 ```
-sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools -y
+sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools python3-pip -y
 mkdir pytorch_install && cd pytorch_install
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
