@@ -63,7 +63,7 @@ sudo python3 setup.py install
 ```
 
 ```
-cd ~/jetbot/utils
+cd ~/jetbot/jetbot/utils
 python3 create_stats_service.py
 sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
 sudo systemctl enable jetbot_stats
