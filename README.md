@@ -2,8 +2,8 @@
 Jetbot https://developer.nvidia.com/embedded/jetpack
 
 ```
-git clone https://github.com/lbaitemple/rpijetbot/
-cd ~/rpijetbot
+git clone https://github.com/lbaitemple/jetbot_nividia_nano
+cd ~/jetbot_nividia_nano
 ```
 
 Image download at 
