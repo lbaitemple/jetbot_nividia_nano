@@ -52,3 +52,24 @@ mv jetbot_nividia_nano jetbot
 cd jetbot
 ./jupyter.sh 
 ```
+
+```
+cd
+sudo apt install python3-smbus
+git clone https://github.com/NVIDIA-AI-IOT/jetbot
+cd jetbot
+sudo apt-get install cmake
+sudo python3 setup.py install
+```
+
+```
+cd jetbot/utils
+python3 create_stats_service.py
+sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
+sudo systemctl enable jetbot_stats
+sudo systemctl start jetbot_stats
+python3 create_jupyter_service.py
+sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
+sudo systemctl enable jetbot_jupyter
+sudo systemctl start jetbot_jupyter
+```
