@@ -45,3 +45,6 @@ python3 setup.py install --user
 sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 ```
 #### Install jupyter lab
+```
+sudo apt install curl -y
+```
