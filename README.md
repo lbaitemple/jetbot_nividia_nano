@@ -39,7 +39,7 @@ git checkout tags/v0.8.1
 export BUILD_VERSION=0.8.1
 python3 setup.py install --user
 ```
-### tenslow
+### tensorflow
 ```
 sudo apt-get install -y libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
 sudo apt-get install python3-pip -y
