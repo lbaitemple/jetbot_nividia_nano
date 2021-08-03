@@ -59,6 +59,7 @@ sudo apt install curl -y
 git clone https://github.com/lbaitemple/jetbot_nividia_nano
 mv jetbot_nividia_nano jetbot
 cd jetbot
+chmod +x jupter.sh
 ./jupyter.sh 
 ```
 
