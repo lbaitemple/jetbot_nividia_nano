@@ -28,3 +28,8 @@ sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 
+cd ~/jetbot/jetbot/utils
+python3 create_stats_service.py
+sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
+sudo systemctl enable jetbot_stats
+sudo systemctl start jetbot_stats
