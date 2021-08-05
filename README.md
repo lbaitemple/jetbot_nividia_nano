@@ -61,7 +61,7 @@ git clone https://github.com/lbaitemple/jetbot_nividia_nano
 mv jetbot_nividia_nano jetbot
 cd ~/jetbot
 sudo python3 setup.py install
-chmod +x jupter.sh
+chmod +x jupyter.sh
 ./jupyter.sh 
 ```
 
