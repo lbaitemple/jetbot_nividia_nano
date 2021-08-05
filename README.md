@@ -87,3 +87,18 @@ cd startup
 sudo ./initenv.sh
 
 ```
+
+### Edimax Wifi Adapter (wih intenret connected first)
+```
+wget https://www.edimax.com/edimax/mw/cufiles/files/download/Driver_Utility/EW-7811Un_V2_Linux_Driver_1.0.0.3.zip
+unzip EW-7811Un_V2_Linux_Driver_1.0.0.3.zip 
+cd EW-7811Un_V2_Linux_Driver_1.0.0.3/
+tar xvf rtl8188EUS_linux_v5.3.9_28540.20180627.tar.gz 
+cd rtl8188EUS_linux_v5.3.9_28540.20180627/
+
+# The next line is important
+export ARCH=arm64
+make
+sudo make install
+sudo reboot now
+```
