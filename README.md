@@ -86,8 +86,26 @@ sudo pip3 install -U numpy==1.19.4 future==0.18.2 mock==3.0.5 h5py==2.10.0 keras
 sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v45 tensorflow
 # sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.3
 sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION tensorflow
+```
 
+### Install ROS
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo apt update
+sudo apt install ros-melodic-desktop-full -y
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
 
+```
+# for ros-melodic install:
+sudo apt install python-rosdep
+# for ros-noetic install: 
+sudo apt install python3-rosdep
+
+rosdep init
+rosdep update
 ```
 #### Install traitlets (master, to support the unlink() method)
 ```
