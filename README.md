@@ -31,7 +31,7 @@ sudo apt install python3-pip python3-pil -y
 ```
 wget https://nvidia.box.com/shared/static/cs3xn3td6sfgtene6jdvsxlr366m2dhq.whl -O torch-1.7.0-cp36-cp36m-linux_aarch64.whl
 sudo apt-get install python3-pip libopenblas-base libopenmpi-dev -y
-pip3 install Cython
+pip3 install Cython cython
 sudo pip3 install numpy torch-1.7.0-cp36-cp36m-linux_aarch64.whl
 ```
 ### torchvision
