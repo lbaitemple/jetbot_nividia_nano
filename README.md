@@ -3,6 +3,7 @@ AWS Jetbot Setup
 
 #### download image (JetPack 4.5)  from Nivida
 https://developer.nvidia.com/jetson-nano-2gb-sd-card-image
+https://developer.nvidia.com/jetson-nano-sd-card-image-45-0
 
 https://developer.nvidia.com/embedded/l4t/r32_release_v6.1/jeston_nano/jetson-nano-jp46-sd-card-image.zip
 
