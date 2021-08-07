@@ -126,3 +126,6 @@ make
 sudo make install
 sudo reboot now
 ```
+
+## install VNC
+https://jinyaozhu.github.io/linux/2019/05/16/vnc.html
