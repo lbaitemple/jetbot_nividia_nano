@@ -67,6 +67,13 @@ sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 ```
+
+### Installl fan control github
+```
+git clone https://github.com/Pyrestone/jetson-fan-ctl
+cd jetson-fan-ctl
+sudo ./install.sh
+```
 ### Install Lidar
 ```
 git clone https://github.com/YDLIDAR/YDLidar-SDK
@@ -104,7 +111,7 @@ sudo apt install python-rosdep
 # for ros-noetic install: 
 sudo apt install python3-rosdep
 
-rosdep init
+sudo rosdep init
 rosdep update
 ```
 #### Install traitlets (master, to support the unlink() method)
