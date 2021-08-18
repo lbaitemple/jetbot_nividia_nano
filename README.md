@@ -74,6 +74,9 @@ git clone https://github.com/Pyrestone/jetson-fan-ctl
 cd jetson-fan-ctl
 sudo ./install.sh
 ```
+
+### Install GPIO (https://github.com/NVIDIA/jetson-gpio)
+
 ### Install Lidar
 ```
 git clone https://github.com/YDLIDAR/YDLidar-SDK
