@@ -140,3 +140,14 @@ sudo reboot now
 
 ## install VNC
 https://jinyaozhu.github.io/linux/2019/05/16/vnc.html
+
+### update cmake (https://cmake.org/download/)
+```
+sudo apt remove cmake
+sudo wget https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2-linux-aarch64.sh -O /opt/cmake-3.21.2-linux-aarch64.sh
+sudo chmod +x /opt/cmake-3.21.2-linux-aarch64.sh
+cd /opt
+sudo bash ./cmake-3.21.2-linux-aarch64.sh
+sudo ln -s /opt/cmake-3.21.2-linux-aarch64/bin/* /usr/local/bin
+cmake --verson
+```
