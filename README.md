@@ -43,6 +43,11 @@ git checkout tags/v0.8.1
 export BUILD_VERSION=0.8.1
 sudo python3 setup.py install --user
 ```
+
+### install opencv
+```
+sudo pip3 install opencv-python 
+```
 #### Install jupyter lab
 ```
 cd ~/
