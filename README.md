@@ -41,7 +41,7 @@ git clone https://github.com/pytorch/vision torchvision   # see below for versio
 cd torchvision
 git checkout tags/v0.8.1
 export BUILD_VERSION=0.8.1
-python3 setup.py install --user
+sudo python3 setup.py install --user
 ```
 #### Install jupyter lab
 ```
