@@ -74,6 +74,7 @@ x = 0
 
 # Load default font.
 font = ImageFont.load_default()
+killer = GracefulKiller(disp)
 
 while killer.kill_now:
     
