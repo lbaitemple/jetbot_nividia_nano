@@ -163,3 +163,11 @@ sudo bash ./cmake-3.21.2-linux-aarch64.sh
 sudo ln -s /opt/cmake-3.21.2-linux-aarch64/bin/* /usr/local/bin
 cmake --verson
 ```
+
+
+### Running docker (https://blog.tensorflow.org/2021/01/leveraging-tensorflow-tensorrt-integration.html)
+```
+sudo usermod -aG docker jetbot
+newgrp docker
+docker pull tensorflow/tensorflow:latest-gpu
+```
