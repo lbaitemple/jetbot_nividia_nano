@@ -166,8 +166,10 @@ cmake --verson
 
 
 ### Running docker (https://blog.tensorflow.org/2021/01/leveraging-tensorflow-tensorrt-integration.html)
+https://developer.nvidia.com/blog/speeding-up-deep-learning-inference-using-tensorrt-updated/
 ```
 sudo usermod -aG docker jetbot
 newgrp docker
 docker pull tensorflow/tensorflow:latest-gpu
 ```
+
