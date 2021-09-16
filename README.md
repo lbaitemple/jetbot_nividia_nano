@@ -6,7 +6,7 @@ https://developer.nvidia.com/jetson-nano-2gb-sd-card-image
 
 https://developer.nvidia.com/jetson-nano-sd-card-image-45-0
 
-https://developer.nvidia.com/embedded/l4t/r32_release_v6.1/jeston_nano/jetson-nano-jp46-sd-card-image.zip
+https://developer.nvidia.com/embedded/l4t/r32_release_v6.1/jeston_nano/jetson-nano-jp46-sd-card-image.zip [tensorrt 8 has some problems, not recommend to install it now]
 
 ### cp image to SD card using etcher
 https://www.balena.io/etcher/
