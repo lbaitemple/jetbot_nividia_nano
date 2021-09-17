@@ -52,8 +52,7 @@ sudo pip3 install opencv-python
 ```
 cd ~/
 sudo apt install python3-smbus curl cmake -y
-git clone https://github.com/lbaitemple/jetbot_nvidia_nano
-mv jetbot_nvidia_nano jetbot
+git clone https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
 cd ~/jetbot
 sudo python3 setup.py install
 chmod +x jupyter.sh
