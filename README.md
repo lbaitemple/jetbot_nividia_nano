@@ -74,6 +74,13 @@ sudo pip3 install torchvision --upgrade
 sudo pip3 install onnx
 ```
 
+```
+sudo python3 -m pip install --upgrade pip
+git clone https://github.com/skvark/opencv-python.git
+cd opencv-python
+sudo python3 setup.py install
+```
+
 ### add .bashrc
 ```
 echo "export CUDA_HOME=/usr/local/cuda">> ~/.bashrc
