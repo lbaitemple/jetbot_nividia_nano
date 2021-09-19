@@ -55,7 +55,7 @@ sudo apt install python3-smbus curl cmake -y
 git clone https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
 cd ~/jetbot
 sudo python3 setup.py install
-sudo pip3 install packaging
+sudo pip3 install packaging ipywidgets
 chmod +x jupyter.sh
 ./jupyter.sh 
 ```
