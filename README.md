@@ -49,6 +49,12 @@ export BUILD_VERSION=0.8.1
 sudo python3 setup.py install
 ```
 
+### install torch2trt
+```
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+cd torch2trt
+sudo python3 setup.py install
+```
 
 #### Install jupyter lab
 ```
