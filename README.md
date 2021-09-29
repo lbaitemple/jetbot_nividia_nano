@@ -185,6 +185,13 @@ sudo make install
 sudo reboot now
 ```
 
+### Install Zed mini (need Jetpack 4.5)
+```
+wget https://download.stereolabs.com/zedsdk/3.5/jp45/jetsons -O ZED_SDK_Tegra_JP45_v3.5.5.run
+chmod +x ZED_SDK_Tegra_JP45_v3.5.5.run
+./ZED_SDK_Tegra_JP45_v3.5.5.run
+```
+
 ## install VNC
 https://jinyaozhu.github.io/linux/2019/05/16/vnc.html
 
