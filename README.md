@@ -26,7 +26,7 @@ sudo apt install python3-pip python3-pil -y
 
 ```
 
-### torch
+### torch (https://qengineering.eu/install-pytorch-on-jetson-nano.html)
 
 ```
 wget https://nvidia.box.com/shared/static/cs3xn3td6sfgtene6jdvsxlr366m2dhq.whl -O torch-1.7.0-cp36-cp36m-linux_aarch64.whl
