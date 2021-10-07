@@ -33,11 +33,13 @@ sudo apt install python3-pip python3-pil -y
 ```
 
 ### torch (https://qengineering.eu/install-pytorch-on-jetson-nano.html if you want to upgrade to 1.9)
+https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048
+
 ```
-wget https://nvidia.box.com/shared/static/cs3xn3td6sfgtene6jdvsxlr366m2dhq.whl -O torch-1.7.0-cp36-cp36m-linux_aarch64.whl
+wget https://nvidia.box.com/shared/static/h1z9sw4bb1ybi0rm3tu8qdj8hs05ljbm.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
 sudo apt-get install python3-pip libopenblas-base libopenmpi-dev -y
 sudo pip3 install Cython cython
-sudo pip3 install numpy torch-1.7.0-cp36-cp36m-linux_aarch64.whl
+sudo pip3 install numpy torch-1.9.0-cp36-cp36m-linux_aarch64.whl
 ```
 ### torchvision
 ```
