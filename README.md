@@ -29,7 +29,7 @@ sudo ./install.sh
 sudo apt update && sudo apt upgrade -y
 sudo usermod -aG i2c $USER
 sudo apt-get update
-sudo apt install python3-pip python3-pil -y
+sudo apt install python3-pip python3-pil python3-matplotlib -y
 ```
 
 ### torch (https://qengineering.eu/install-pytorch-on-jetson-nano.html if you want to upgrade to 1.9)
@@ -61,7 +61,7 @@ sudo python3 setup.py install
 #### Install jupyter lab
 ```
 cd ~/
-sudo apt install python3-smbus curl cmake -y
+sudo apt install python3-smbus curl cmake  -y
 git clone -b tensorrt_torch https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
 cd ~/jetbot
 sudo python3 setup.py install
