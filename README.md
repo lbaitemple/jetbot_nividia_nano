@@ -184,9 +184,11 @@ source ~/.bashrc
 
 ```
 # for ros-melodic install:
-sudo apt install python-rosdep
+sudo apt install python-catkin-pkg -y
+sudo apt install python-rosdep -y
 # for ros-noetic install: 
-sudo apt install python3-rosdep
+sudo apt install python3-catkin-pkg -y
+sudo apt install python3-rosdep -y
 
 sudo rosdep init
 rosdep update
