@@ -193,6 +193,23 @@ sudo apt install python3-rosdep -y
 sudo rosdep init
 rosdep update
 ```
+
+### Install (https://github.com/orbbec/ros_astra_camera)
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin_make
+source devel/setup.bash
+cd ~/catkin_ws/src
+git clone https://github.com/orbbec/ros_astra_camera
+roscd astra_camera
+./scripts/create_udev_rules
+cd ~/catkin_ws
+catkin_make --pkg astra_camera
+
+source devel/setup.bash
+roslaunch astra_camera astrapro.launch
+```
 #### Install traitlets (master, to support the unlink() method)
 ```
 sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
