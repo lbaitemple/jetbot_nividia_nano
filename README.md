@@ -72,6 +72,17 @@ chmod +x jupyter.sh
 ./jupyter.sh 
 ```
 
+
+### Deep camera
+```
+wget https://dl.orbbec3d.com/dist/astra/v2.1.3/AstraSDK-v2.1.3-Linux-arm.zip
+unzip AstraSDK-v2.1.3-Linux-arm.zip 
+gunzip -c AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64.tar.gz  | tar -xvf -
+cd AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install
+chmod +x ./install.sh
+sudo ./install.sh
+
+```
 ###
 
 ```
