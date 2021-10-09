@@ -81,9 +81,20 @@ gunzip -c AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64.tar.gz  | ta
 cd AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install
 chmod +x ./install.sh
 sudo ./install.sh
-
 ```
+### install openNI
+```
+wget https://dl.orbbec3d.com/dist/openni2/OpenNI_2.3.0.66.zip
+unzip OpenNI_2.3.0.66.zip
+cd Linux/OpenNI-Linux-Arm64-2.3.0.66
+chmod +x ./install.sh
+sudo ./install.sh
+source OpenNIDevEnvironment
+cmake -DWITH_OPENNI2=ON ..
+```
+
 ###
+
 
 ```
 sudo apt install -y python3-skimage  python3-skimage-lib
