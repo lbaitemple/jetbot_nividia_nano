@@ -25,7 +25,13 @@ git clone https://github.com/Pyrestone/jetson-fan-ctl
 cd jetson-fan-ctl
 sudo ./install.sh
 ```
-
+### add swap
+```
+git clone https://github.com/JetsonHacksNano/resizeSwapMemory
+cd resizeSwapMemory
+ ./setSwapMemorySize.sh -g 4
+ sudo reboot
+```
 ##
 ```
 sudo apt update && sudo apt upgrade -y
