@@ -77,25 +77,6 @@ sudo pip3 install packaging
 chmod +x jupyter.sh
 ./jupyter.sh 
 ```
-### astro
-```
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/
-catkin_make
-source devel/setup.bash
-cd ~/catkin_ws/src
-git clone https://github.com/orbbec/ros_astra_camera
-roscd astra_camera
-./scripts/create_udev_rules
-cd ~/catkin_ws
-rosdep install --from-paths src --ignore-src -r -y
-catkin_make --pkg astra_camera
-```
-
-```
-roslaunch astra_camera astrapro.launch
-rosrun web_video_server web_video_server 
-```
 
 ### Deep camera
 ```
@@ -227,7 +208,7 @@ source devel/setup.bash
 cd ~/catkin_ws/src
 git clone https://github.com/orbbec/ros_astra_camera
 roscd astra_camera
-sudo apt install ros-melodic-libuvc-camera  -y
+sudo apt install ros-melodic-libuvc-camera ros-melodic-web-video-server -y
 ./scripts/create_udev_rules
 cd ~/catkin_ws
 rosdep install --from-paths src --ignore-src -r -y
@@ -235,6 +216,7 @@ catkin_make --pkg astra_camera
 
 source devel/setup.bash
 roslaunch astra_camera astrapro.launch
+rosrun web_video_server web_video_server 
 ```
 #### Install traitlets (master, to support the unlink() method)
 ```
