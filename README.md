@@ -103,8 +103,13 @@ source OpenNIDevEnvironment
 cmake -DWITH_OPENNI2=ON ..
 ```
 
-###
+### Install pycoral
+```
+sudo python3 -m pip install --extra-index-url https://google-coral.github.io/py-repo/ pycoral~=2.0
+```
 
+
+####
 
 ```
 sudo apt install -y python3-skimage  python3-skimage-lib
