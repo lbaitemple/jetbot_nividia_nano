@@ -80,15 +80,20 @@ chmod +x jupyter.sh
 
 ### Deep camera [Astra]
 ```
+mkidr tmp
+cd tmp
 wget https://dl.orbbec3d.com/dist/astra/v2.1.3/AstraSDK-v2.1.3-Linux-arm.zip
 unzip AstraSDK-v2.1.3-Linux-arm.zip 
 gunzip -c AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64.tar.gz  | tar -xvf -
 cd AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install
 chmod +x ./install.sh
 sudo ./install.sh
+ echo "export ASTRA_SDK_INCLUDE=/home/jetbot/tmp/AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install/include
+> export ASTRA_SDK_LIB=/home/jetbot/tmp/AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install/lib" >> ~/.bashrc
 ```
 ### install openNI [Astra - using deep required]
 ```
+cd ~/tmp
 wget https://dl.orbbec3d.com/dist/openni2/OpenNI_2.3.0.66.zip
 unzip OpenNI_2.3.0.66.zip
 cd Linux/OpenNI-Linux-Arm64-2.3.0.66
