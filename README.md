@@ -287,4 +287,8 @@ cmake ../ -DFORCE_RSUSB_BACKEND=ON -DBUILD_PYTHON_BINDINGS:bool=true -DPYTHON_EX
 make -j4
 sudo make install
 
+echo "export PATH=$PATH:~/.local/bin
+> export PYTHONPATH=$PYTHONPATH:/usr/local/lib
+> export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/pyrealsense2" >> ~/.bashrc
+
 ```
