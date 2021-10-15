@@ -80,7 +80,7 @@ chmod +x jupyter.sh
 
 ### Deep camera [Astra]
 ```
-mkidr tmp
+mkdir tmp
 cd tmp
 wget https://dl.orbbec3d.com/dist/astra/v2.1.3/AstraSDK-v2.1.3-Linux-arm.zip
 unzip AstraSDK-v2.1.3-Linux-arm.zip 
