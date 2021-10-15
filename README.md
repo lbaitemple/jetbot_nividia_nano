@@ -87,6 +87,11 @@ sudo pip3 install -e .
 sudo pip3 install numpy==1.19.4
 jupyter nbextension install --py --symlink --sys-prefix jupyros
 jupyter nbextension enable --py --sys-prefix jupyros
+```
+In the notebook, you will need to include
+```
+import sys
+sys.path.append('/opt/ros/melodic/lib/python2.7/dist-packages/')
 
 ```
 ### Deep camera [Astra]
