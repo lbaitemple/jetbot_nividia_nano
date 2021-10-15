@@ -84,6 +84,7 @@ sudo pip3 install jupyter_packaging
 git clone https://github.com/RoboStack/jupyter-ros.git
 cd jupyter-ros
 sudo pip3 install -e .
+sudo pip3 install numpy==1.19.4
 jupyter nbextension install --py --symlink --sys-prefix jupyros
 jupyter nbextension enable --py --sys-prefix jupyros
 
