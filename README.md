@@ -218,7 +218,7 @@ source devel/setup.bash
 cd ~/catkin_ws/src
 git clone https://github.com/orbbec/ros_astra_camera
 roscd astra_camera
-sudo apt install ros-melodic-libuvc-camera ros-melodic-web-video-server -y
+sudo apt install ros-melodic-libuvc-camera ros-melodic-web-video-server ros-melodic-openni2-launch  -y
 ./scripts/create_udev_rules
 cd ~/catkin_ws
 rosdep install --from-paths src --ignore-src -r -y
