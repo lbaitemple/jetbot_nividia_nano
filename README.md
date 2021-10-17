@@ -92,8 +92,27 @@ In the notebook, you will need to include
 ```
 import sys
 sys.path.append('/opt/ros/melodic/lib/python2.7/dist-packages/')
+```
+### add webrviz (https://github.com/osrf/rvizweb)
 
 ```
+mkdir -p ~/ws/src
+cd ~/ws/src
+git clone https://github.com/osrf/rvizweb/
+
+curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+
+cd ~/ws
+rosdep install --from-paths src --ignore-src -r -y
+
+cd ~/ws
+catkin_make install 
+
+source ~/ws/install/setup.bash
+roslaunch rvizweb rvizweb.launch
+```
+http://localhost:8001/rvizweb/www/index.html
+
 ### Deep camera [Astra]
 ```
 mkdir tmp
