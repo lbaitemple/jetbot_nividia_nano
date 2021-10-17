@@ -119,11 +119,6 @@ source OpenNIDevEnvironment
 cmake -DWITH_OPENNI2=ON ..
 ```
 
-### Install pycoral
-```
-sudo python3 -m pip install --extra-index-url https://google-coral.github.io/py-repo/ pycoral~=2.0
-```
-
 
 ####
 
@@ -180,6 +175,19 @@ sudo systemctl start jetbot_jupyter
 
 ### Install GPIO (https://github.com/NVIDIA/jetson-gpio)
 
+#### Add google coral (https://coral.ai/models/semantic-segmentation/)
+1. install the driver
+```
+echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install libedgetpu1-std -y
+```
+2. Install pycoral
+```
+sudo python3 -m pip install --extra-index-url https://google-coral.github.io/py-repo/ pycoral~=2.0
+```
+3. Convert tensorflow lite model to edgetpu lite model using webinterface (https://colab.research.google.com/github/google-coral/tutorials/blob/master/compile_for_edgetpu.ipynb)
 
 
 ### Install Lidar
