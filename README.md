@@ -234,6 +234,12 @@ rosdep update
 ```
 
 ### Install (https://github.com/orbbec/ros_astra_camera)
+
+Find serial number
+```
+rs-fw-update -l
+```
+Easier instruction available at (https://github.com/natashasaki/IntelRealSense_for_SLAM) to install ROS, or following the commands below
 ```
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
