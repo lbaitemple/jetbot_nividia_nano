@@ -24,13 +24,13 @@ class OpenCvGstCamera(CameraBase):
         super().__init__(self, *args, **kwargs)
 
         try:
-            if (self.usb ==-1):
-                self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
-            else:
-                if (self.url==""):
+            if (self.url==""):    # check url first
+                if (self.usb ==-1):
+                    self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
+                else:                
                     self.cap = cv2.VideoCapture(self.usb)
-                else:
-                    self.cap = cv2.VideoCapture(self.url)
+            else:
+                self.cap = cv2.VideoCapture(self.url)
             re, image = self.cap.read()
 
             if not re:
