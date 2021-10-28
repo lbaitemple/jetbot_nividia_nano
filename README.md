@@ -357,3 +357,17 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 realsense-viewer
 ```
+
+### VNC
+```
+cd /usr/lib/systemd/user/graphical-session.target.wants
+sudo ln -s ../vino-server.service ./.
+gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false
+
+# Replace thepassword with your desired password
+gsettings set org.gnome.Vino authentication-methods "['vnc']"
+gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
+
+sudo reboot
+```
