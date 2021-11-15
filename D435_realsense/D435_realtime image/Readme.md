@@ -24,3 +24,13 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 realsense-viewer
 ```
+
+When you are using the python wrapper in jupterlab, please include 
+```
+import sys
+sys.path.append('/usr/local/lib/python3.6/pyrealsense2')
+```
+before you use
+```
+import pyrealsense2 as rs 
+```
