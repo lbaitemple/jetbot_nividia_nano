@@ -50,6 +50,7 @@ sudo pip3 install opencv-python
 ```
 #### Install jupyter lab
 ```
+apt-get install libzmq3-dev -y
 cd ~/
 sudo apt install python3-smbus curl cmake -y
 git clone https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
