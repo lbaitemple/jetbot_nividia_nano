@@ -6,12 +6,12 @@ sudo pip3 install --upgrade numpy
 
 # install tensorflow
 sudo apt-get update
-sudo apt install python3-dev python3-pip python3-venv
+sudo apt install python3-dev python3-pip python3-venv -y
 
 sudo pip uninstall tensorflow
 sudo pip3 uninstall tensorflow
 # install the dependencies (if not already onboard)
-sudo apt-get install gfortran
+sudo apt-get install gfortran -y
 sudo apt-get install libhdf5-dev libc-ares-dev libeigen3-dev -y
 sudo apt-get install libatlas-base-dev libopenblas-dev libblas-dev -y
 sudo apt-get install liblapack-dev -y
