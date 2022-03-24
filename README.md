@@ -21,6 +21,16 @@ remote in using ssh jetbot@ipaddress
 ```
 sudo apt update && sudo apt upgrade -y
 sudo usermod -aG i2c $USER
+
+cd ~
+git clone https://github.com/Pyrestone/jetson-fan-ctl
+cd jetson-fan-ctl
+sudo ./install.sh
+
+cd ~
+git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
+cd jetbot
+
 sudo apt-get update
 sudo apt install python3-pip python3-pil -y
 
