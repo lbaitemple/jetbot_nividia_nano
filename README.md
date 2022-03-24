@@ -40,7 +40,8 @@ chmod +x pytorch.sh
 chmod +x jetbot_stats.sh
 ./jetbot_stats.sh
 
-
+chmod +x install_ros.sh
+./install_ros.sh
 ```
 
 
