@@ -31,6 +31,12 @@ cd ~
 git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 
+chmod +x pytorch.sh
+./pytorch.sh
+
+chmod +x jetbot_stats.sh
+./jetbot_stats.sh
+
 sudo apt-get update
 sudo apt install python3-pip python3-pil -y
 
