@@ -1,13 +1,6 @@
 # jetbot_nividia_nano
 AWS Jetbot Setup
 
-#### download image (JetPack 4.5)  from Nivida
-https://developer.nvidia.com/jetson-nano-2gb-sd-card-image
-
-https://developer.nvidia.com/jetson-nano-sd-card-image-45-0
-
-https://developer.nvidia.com/embedded/l4t/r32_release_v6.1/jeston_nano/jetson-nano-jp46-sd-card-image.zip [tensorrt 8 has some problems, not recommend to install it now]
-
 ### cp image to SD card using etcher
 https://www.balena.io/etcher/
 
@@ -17,43 +10,34 @@ setup username as jetbot, system as jetbot, password as jetbot (or something els
 Find out the ip address
 remote in using ssh jetbot@ipaddress
 
-##
+### Installl fan control github
+```
+cd ~
+git clone https://github.com/Pyrestone/jetson-fan-ctl
+cd jetson-fan-ctl
+sudo ./install.sh
+```
+
+### Reboot and setup the rest of system
 ```
 sudo apt update && sudo apt upgrade -y
+sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
 sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 sudo apt install python3-pip python3-pil -y
 
 sudo usermod -aG i2c $USER
 
 cd ~
-git clone https://github.com/Pyrestone/jetson-fan-ctl
-cd jetson-fan-ctl
-sudo ./install.sh
-
-cd ~
 git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 
-chmod +x pytorch.sh
-./pytorch.sh
+bash ./pytorch.sh
 
-chmod +x jetbot_stats.sh
-./jetbot_stats.sh
+bash ./jetbot_stats.sh
 
-chmod +x install_ros.sh
-./install_ros.sh
-```
+bash ./jupyter.sh
 
-
-
-### Install ROS
-```
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-sudo apt update
-sudo apt install ros-melodic-desktop-full -y
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+bash ./install_ros.sh
 ```
 
 ```
@@ -66,24 +50,6 @@ sudo rosdep init
 rosdep update
 ```
 
-### torch (https://qengineering.eu/install-pytorch-on-jetson-nano.html)
-
-```
-wget https://nvidia.box.com/shared/static/cs3xn3td6sfgtene6jdvsxlr366m2dhq.whl -O torch-1.7.0-cp36-cp36m-linux_aarch64.whl
-sudo apt-get install python3-pip libopenblas-base libopenmpi-dev -y
-sudo pip3 install Cython cython
-sudo pip3 install numpy torch-1.7.0-cp36-cp36m-linux_aarch64.whl
-```
-### torchvision
-```
-sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev -y
-git clone https://github.com/pytorch/vision torchvision   # see below for version of torchvision to download
-cd torchvision
-git checkout tags/v0.8.1
-export BUILD_VERSION=0.8.1
-sudo python3 setup.py install
-```
-
 ### install opencv
 ```
 sudo pip3 install opencv-python 
@@ -91,7 +57,6 @@ sudo pip3 install opencv-python
 #### Install jupyter lab
 ```
 cd ~/
-sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
 git clone https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
 cd ~/jetbot
 sudo python3 setup.py install
@@ -99,29 +64,6 @@ sudo pip3 install packaging ipywidgets
 chmod +x jupyter.sh
 ./jupyter.sh 
 ```
-
-##### If not successfully run, please use the following commands
-```
-cd ~/jetbot/jetbot/utils
-python3 create_stats_service.py
-sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
-sudo systemctl enable jetbot_stats
-sudo systemctl start jetbot_stats
-python3 create_jupyter_service.py
-sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
-sudo systemctl enable jetbot_jupyter
-sudo systemctl start jetbot_jupyter
-```
-
-### Installl fan control github
-```
-git clone https://github.com/Pyrestone/jetson-fan-ctl
-cd jetson-fan-ctl
-sudo ./install.sh
-```
-
-### Install GPIO (https://github.com/NVIDIA/jetson-gpio)
-
 
 ### add .bashrc
 ```
@@ -152,29 +94,6 @@ $ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.co
 
 ```
 
-### Install ROS
-```
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-sudo apt update
-sudo apt install ros-melodic-desktop-full -y
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-```
-
-```
-# for ros-melodic install:
-sudo apt install python-rosdep
-# for ros-noetic install: 
-sudo apt install python3-rosdep
-
-sudo rosdep init
-rosdep update
-```
-#### Install traitlets (master, to support the unlink() method)
-```
-sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
-```
 
 ### Edimax Wifi Adapter (wih intenret connected first)
 ```
