@@ -1,8 +1,31 @@
-  
-#!/bin/sh
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-sudo apt update
-sudo apt install ros-melodic-desktop-full -y
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+#!/bin/bash
+# Animesh Bala Ani (ANI717)
+
+# exit immediately if a command exits with a non-zero status.
+set -e
+
+# record script start time
+date
+
+# install dependency
+sudo apt-get update && sudo apt-get install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+sudo apt-get update && sudo apt-get install -y curl gnupg2 lsb-release
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+# install ros2 dashing (ubuntu 18.04)
+sudo apt-get update
+sudo apt-get install -y ros-dashing-desktop python3-colcon-common-extensions python-rosdep
+sudo rosdep init
+rosdep update
+
+# source ros2 dashing
+source /opt/ros/dashing/setup.bash
+echo  'source /opt/ros/dashing/setup.bash' >> ~/.bashrc 
+
+# record script end time
+date
