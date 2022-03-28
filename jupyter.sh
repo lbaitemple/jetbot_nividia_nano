@@ -1,4 +1,4 @@
-cd ~
+
 sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 #!/bin/bash
 # Animesh Bala Ani (ANI717)
