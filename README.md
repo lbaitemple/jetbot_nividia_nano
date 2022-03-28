@@ -30,7 +30,7 @@ sudo apt install python3-pip python3-pil -y
 sudo usermod -aG i2c $USER
 
 cd ~
-git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
+git clone  -b ece3432-ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 
 bash ./pytorch.sh
