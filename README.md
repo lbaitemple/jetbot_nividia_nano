@@ -59,7 +59,7 @@ sudo pip3 install opencv-python
 #### Install jupyter lab
 ```
 cd ~/
-git clone https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
+git clone -b ece3432-ros2 https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
 cd ~/jetbot
 sudo python3 setup.py install
 sudo pip3 install packaging ipywidgets
