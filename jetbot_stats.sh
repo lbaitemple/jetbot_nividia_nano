@@ -20,7 +20,7 @@ sudo -H pip3 install Adafruit_SSD1306
 # create jetbot_stats service
 python3 ./jetbot/utils/create_stats_service.py
 sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
-sudo cp ./jetbot/app/stats.py /etc/systemd/system/jetbot_stats.py
+sudo cp ./jetbot/apps/stats.py /etc/systemd/system/jetbot_stats.py
 sudo systemctl enable jetbot_stats
 sudo systemctl start jetbot_stats
 
