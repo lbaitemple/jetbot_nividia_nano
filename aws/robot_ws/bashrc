@@ -1,0 +1,2 @@
+alias turnon='cd ~/robot_ws && source install/local_setup.bash && ros2 launch ros2_twist_message_to_robot_motion launch.py'
+alias gamepad='cd ~/robot_ws && source install/local_setup.bash && ros2 launch robot_app gamepad_launch.py'
