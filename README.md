@@ -46,9 +46,13 @@ bash ./installros.sh
 
 #### Get ROS robot working
 ```
+sudo gpasswd -a $USER input
+sudo -H python3 -m pip install inputs
+
 cp -r ~/jetbot/aws/robot_ws/ ~/
 cd ~/robot_ws
 colcon build --symlink-install
+
 cat bashrc >> ~/.bashrc
 ```
 
