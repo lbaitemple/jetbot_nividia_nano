@@ -43,6 +43,15 @@ bash ./jupyter.sh
 bash ./installros.sh
 ```
 
+
+#### Get ROS robot working
+```
+cp -r ~/jetbot/aws/robot_ws/ ~/
+cd ~/robot_ws
+colcon build --symlink-install
+cat bashrc >> ~/.bashrc
+```
+
 ```
 # for ros-melodic install:
 sudo apt install python-rosdep
