@@ -149,4 +149,4 @@ newgrp docker
 docker pull tensorflow/tensorflow:latest-gpu
 ```
 
-https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html, or download image at https://drive.google.com/u/0/uc?id=1rssyP1Pl07JYUfPt6r9sqLIvqHXb6ZRm&export=download
+https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html, or download the image at https://drive.google.com/u/0/uc?id=1rssyP1Pl07JYUfPt6r9sqLIvqHXb6ZRm&export=download
