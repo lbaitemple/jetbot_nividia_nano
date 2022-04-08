@@ -140,6 +140,10 @@ sudo ln -s /opt/cmake-3.21.2-linux-aarch64/bin/* /usr/local/bin
 cmake --verson
 ```
 
+### usb camera
+```
+sudo usermod -a -G video jetbot
+```
 
 ### Running docker (https://blog.tensorflow.org/2021/01/leveraging-tensorflow-tensorrt-integration.html)
 https://developer.nvidia.com/blog/speeding-up-deep-learning-inference-using-tensorrt-updated/
