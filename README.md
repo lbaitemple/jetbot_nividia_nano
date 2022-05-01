@@ -60,10 +60,15 @@ You can open two terminal windows in jupter lab. For one terminal, you can
 ```
 turnon
 ```
-For the other terminal, you can type 
+For the other terminal, you can run logitech controller using
 ```
-gamepad
+gamepad 
 ```
+or run with waveshare controller using
+```
+gamepad gamepad_type:=waveshare
+```
+
 
 ```
 # for ros-melodic install:
