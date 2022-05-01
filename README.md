@@ -56,6 +56,14 @@ colcon build --symlink-install
 
 cat bashrc >> ~/.bashrc
 ```
+You can open two terminal windows in jupter lab. For one terminal, you can 
+```
+turnon
+```
+For the other terminal, you can type 
+```
+gamepad
+```
 
 ```
 # for ros-melodic install:
