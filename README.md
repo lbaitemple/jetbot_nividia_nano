@@ -29,6 +29,7 @@ sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 
 
 sudo usermod -aG i2c $USER
+sudo usermod -a -G video jetbot
 
 cd ~
 git clone  -b ece3432-ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
@@ -70,36 +71,8 @@ rosdep update
 ```
 sudo pip3 install opencv-python 
 ```
-#### Install jupyter lab
-```
-cd ~/
-git clone -b ece3432-ros2 https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
-cd ~/jetbot
-sudo python3 setup.py install
-sudo pip3 install packaging ipywidgets
-chmod +x jupyter.sh
-./jupyter.sh 
-```
 
-### add .bashrc
-```
-echo "export CUDA_HOME=/usr/local/cuda">> ~/.bashrc
-echo "export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64">> ~/.bashrc
-echo "export PATH=$PATH:${CUDA_HOME}/bin">> ~/.bashrc
-
-source ~/.bashrc
-```
-### Install Lidar
-```
-git clone https://github.com/YDLIDAR/YDLidar-SDK
-cd YDLidar-SDK
-sudo apt install swig -y
-sudo python3 setup.py install
-cd startup
-sudo ./initenv.sh
-
-```
-### tensorflow (https://forums.developer.nvidia.com/t/official-tensorflow-for-jetson-nano/71770)
+### optional: tensorflow (https://forums.developer.nvidia.com/t/official-tensorflow-for-jetson-nano/71770)
 ```
 sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
 sudo apt-get install python3-pip
@@ -111,22 +84,7 @@ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/
 ```
 
 
-### Edimax Wifi Adapter (wih intenret connected first)
-```
-wget https://www.edimax.com/edimax/mw/cufiles/files/download/Driver_Utility/EW-7811Un_V2_Linux_Driver_1.0.0.3.zip
-unzip EW-7811Un_V2_Linux_Driver_1.0.0.3.zip 
-cd EW-7811Un_V2_Linux_Driver_1.0.0.3/
-tar xvf rtl8188EUS_linux_v5.3.9_28540.20180627.tar.gz 
-cd rtl8188EUS_linux_v5.3.9_28540.20180627/
-
-# The next line is important
-export ARCH=arm64
-make
-sudo make install
-sudo reboot now
-```
-
-## install VNC
+## optional: install VNC
 https://jinyaozhu.github.io/linux/2019/05/16/vnc.html
 
 ### update cmake (https://cmake.org/download/)
@@ -138,19 +96,6 @@ cd /opt
 sudo bash ./cmake-3.21.2-linux-aarch64.sh
 sudo ln -s /opt/cmake-3.21.2-linux-aarch64/bin/* /usr/local/bin
 cmake --verson
-```
-
-### usb camera
-```
-sudo usermod -a -G video jetbot
-```
-
-### Running docker (https://blog.tensorflow.org/2021/01/leveraging-tensorflow-tensorrt-integration.html)
-https://developer.nvidia.com/blog/speeding-up-deep-learning-inference-using-tensorrt-updated/
-```
-sudo usermod -aG docker jetbot
-newgrp docker
-docker pull tensorflow/tensorflow:latest-gpu
 ```
 
 https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html, or download the image at https://drive.google.com/u/0/uc?id=1rssyP1Pl07JYUfPt6r9sqLIvqHXb6ZRm&export=download
