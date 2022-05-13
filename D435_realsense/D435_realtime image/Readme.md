@@ -25,14 +25,15 @@ make -j4
 sudo make install
 
 echo "export PATH=$PATH:~/.local/bin
-> export PYTHONPATH=$PYTHONPATH:/usr/local/lib
-> export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/pyrealsense2" >> ~/.bashrc
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/pyrealsense2" >> ~/.bashrc
 ```
 
+python 2.7
 ```
 echo "export PATH=$PATH:~/.local/bin
-> export PYTHONPATH=$PYTHONPATH:/usr/local/lib
-> export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/pyrealsense2" >> ~/.bashrc
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/pyrealsense2" >> ~/.bashrc
 ```
 
 ```
