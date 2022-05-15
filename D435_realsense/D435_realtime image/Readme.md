@@ -7,6 +7,8 @@ wget https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.49.0.zi
 unzip v2.49.0.zip
 cd ~/librealsense-2.49.0
 CUDACXX=/usr/local/cuda-10.2/bin/nvcc
+sudo apt-get install libssl-dev -y
+
 mkdir build
 cd build
 export PATH=$PATH:/usr/local/cuda-10.2/bin/
