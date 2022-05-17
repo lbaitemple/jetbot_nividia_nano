@@ -26,7 +26,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
 sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 sudo apt install python3-pip python3-pil -y
-sudo apt install python3-colcon-common-extensions -y
+sudo apt install python3-colcon-common-extensions  python3-rospkg -y
  
 sudo usermod -aG i2c $USER
 sudo usermod -a -G video jetbot
