@@ -82,6 +82,11 @@ sudo make install
 echo "export PATH=$PATH:~/.local/bin
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/pyrealsense2" >> ~/.bashrc
+
+cd ~/librealsense-2.49.0
+sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules
+sudo udevadm trigger
 ```
 ### install opencv
 ```
