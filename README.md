@@ -41,11 +41,18 @@ bash ./jetbot_stats.sh
 bash ./jupyter.sh
 
 bash ./install_ros.sh
-```
 
-```
 sudo apt install python3-colcon-common-extensions  python3-rospkg -y
+```
 
+```
+cd ~
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+cd ~/torch2trt
+sudo python3 setup.py install
+```
+
+```
 # for ros-melodic install:
 sudo apt install python-rosdep
 # for ros-noetic install: 
