@@ -37,7 +37,6 @@ cd jetbot
 bash ./pytorch.sh
 
 bash ./jetbot_stats.sh
-export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
 
 bash ./jupyter.sh
 
