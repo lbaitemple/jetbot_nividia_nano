@@ -33,7 +33,7 @@ sudo apt-get -f install
 sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/backup/
 sudo rm -rf /var/lib/dpkg/info
 sudo mv /var/lib/dpkg/backup/ /var/lib/dpkg/info/
-sudo apt autoremove
+sudo apt autoremove -y
 ```
 ```
 sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
