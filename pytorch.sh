@@ -14,8 +14,8 @@ sudo -H pip3 install --upgrade pip testresources protobuf
 sudo -H pip3 install numpy==1.19.4
 
 # install torch and torchvision
-#wget https://nvidia.box.com/shared/static/h1z9sw4bb1ybi0rm3tu8qdj8hs05ljbm.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
-#sudo -H pip3 install torch-1.9.0-cp36-cp36m-linux_aarch64.whl torchvision
+wget https://nvidia.box.com/shared/static/h1z9sw4bb1ybi0rm3tu8qdj8hs05ljbm.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
+sudo -H pip3 install torch-1.9.0-cp36-cp36m-linux_aarch64.whl torchvision
 
 sudo pip install --upgrade torch torchvision==0.10.0
 # record script end time
