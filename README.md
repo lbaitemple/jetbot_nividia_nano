@@ -44,7 +44,16 @@ bash ./install_ros.sh
 
 sudo apt install python3-colcon-common-extensions  python3-rospkg -y
 ```
+### change the kernal for v 4.5.1
+```
+sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/backup/
+sudo mkdir /var/lib/dpkg/info/
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt autoremove
+```
 
+### Install torch2trt
 ```
 cd ~
 git clone https://github.com/NVIDIA-AI-IOT/torch2trt
@@ -69,7 +78,7 @@ wget https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.49.0.zi
 unzip v2.49.0.zip
 cd ~/librealsense-2.49.0
 CUDACXX=/usr/local/cuda-10.2/bin/nvcc
-sudo apt-get install libssl-dev -y
+sudo apt-get install -y  libssl-dev libglfw3 libglfw3-dev libxinerama-dev libxcursor-dev
 
 mkdir build
 cd build
