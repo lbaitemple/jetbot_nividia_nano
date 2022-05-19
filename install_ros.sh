@@ -14,3 +14,4 @@ sudo apt install -y ros-melodic-desktop-full --fix-missing
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 echo "export ROS_PYTHON_VERSION=3" >> ~/.bashrc
 source ~/.bashrc
+sudo apt install python3-colcon-common-extensions -y
