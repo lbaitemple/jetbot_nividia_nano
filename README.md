@@ -54,7 +54,7 @@ bash ./jetbot_stats.sh
 bash ./jupyter.sh
 
 bash ./install_ros.sh
-
+sudo pip3 install imageio
 sudo apt install python3-colcon-common-extensions  python3-rospkg -y
 ```
 ### change the kernal for v 4.5.1
