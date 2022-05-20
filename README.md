@@ -67,14 +67,8 @@ sudo apt autoremove
 ```
 ### Install tensorRT
 ```
-git clone https://github.com/NVIDIA/TensorRT
-cd TensorRT
-git submodule update --init --recursive
-export TRT_OSSPATH=`pwd`
-export 
-mkdir -p build && cd build
-cmake .. -DTRT_LIB_DIR=$TRT_LIBPATH -DTRT_OUT_DIR=`pwd`/out -DCMAKE_TOOLCHAIN_FILE=$TRT_OSSPATH/cmake/toolchains/cmake_aarch64-native.toolchain
-make -j$(nproc)
+sudo python3 -m pip install numpy
+sudo apt-get install python3-libnvinfer-dev
 ```
 
 ### Install torch2trt
