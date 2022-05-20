@@ -6,6 +6,7 @@ https://www.balena.io/etcher/
 
 #### download image (JetPack 4.5)  from Nivida
 https://developer.nvidia.com/embedded/jetpack
+
 https://developer.nvidia.com/jetson-nano-2gb-sd-card-image
 
 ### setup ubuntu and wifi after you load in sd card
