@@ -69,6 +69,8 @@ sudo apt autoremove
 ```
 sudo python3 -m pip install numpy
 sudo apt-get install python3-libnvinfer-dev
+
+dpkg -l | grep TensorRT
 ```
 
 ### Install torch2trt
