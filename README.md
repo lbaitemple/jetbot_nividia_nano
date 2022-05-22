@@ -94,6 +94,8 @@ rosdep update
 ```
 
 ### D435
+
+https://github.com/IntelRealSense/librealsense/releases
 ```
 cd ~
 wget https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.49.0.zip
