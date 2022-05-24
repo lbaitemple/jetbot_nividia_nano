@@ -13,9 +13,11 @@ sudo apt-get install -y python3-pip python3-setuptools python3-pil
 sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
 cd ~/jetbot
 sudo python3 setup.py install
+sudo -H pip3 install --upgrade pip
+
 sudo pip3 install packaging 
 sudo pip3 install ipywidgets
-sudo -H pip3 install --upgrade pip
+
 sudo -H pip3 install Adafruit_SSD1306
 
 # create jetbot_stats service
