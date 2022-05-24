@@ -22,6 +22,14 @@ cd jetson-fan-ctl
 sudo ./install.sh
 ```
 
+### add swap
+```
+git clone https://github.com/JetsonHacksNano/resizeSwapMemory
+cd resizeSwapMemory
+ ./setSwapMemorySize.sh -g 4
+ sudo reboot
+```
+
 ### Reboot and setup the rest of system
 ```
 sudo apt update && sudo apt upgrade -y
