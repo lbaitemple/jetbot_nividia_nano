@@ -60,6 +60,7 @@ cd jetbot
 bash ./pytorch.sh
 
 bash ./jetbot_stats.sh
+echo "export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1" >> ~/.bashrc
 
 bash ./jupyter.sh
 
