@@ -16,3 +16,5 @@ echo "export ROS_PYTHON_VERSION=3" >> ~/.bashrc
 source ~/.bashrc
 sudo apt update
 sudo apt install python3-colcon-common-extensions -y
+sudo pip3 install imageio
+
