@@ -22,7 +22,7 @@ cd jetson-fan-ctl
 sudo ./install.sh
 ```
 ### pytorch for Jetson Nano
-You will need to make sure which version of the image is installed. Jetson 4.5.1 is a good verion to try and download.
+You will need to make sure which version of the image is installed because we can use Pytorch 1.10. Jetson 4.5.1 is a good verion to try and download.
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-11-now-available/72048
 
