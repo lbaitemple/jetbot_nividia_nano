@@ -1,4 +1,4 @@
-sudo apt-get install python3-pip libjpeg-dev libopenblas-dev libopenmpi-dev libomp-dev
+sudo apt-get install python3-pip libjpeg-dev libopenblas-dev libopenmpi-dev libomp-dev -y
 sudo -H pip3 install future
 sudo pip3 install -U --user wheel mock pillow
 sudo -H pip3 install testresources
