@@ -34,6 +34,11 @@ cd resizeSwapMemory
  sudo reboot
 ```
 
+### check version
+```
+sudo apt-cache show nvidia-jetpack
+```
+
 ### Reboot and setup the rest of system
 ```
 sudo apt update && sudo apt upgrade -y
