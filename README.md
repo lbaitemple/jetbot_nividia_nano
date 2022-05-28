@@ -30,7 +30,7 @@ https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-11-now-availa
 ```
 git clone https://github.com/JetsonHacksNano/resizeSwapMemory
 cd resizeSwapMemory
- ./setSwapMemorySize.sh -g 4
+ ./setSwapMemorySize.sh -g 8
  sudo reboot
 ```
 
