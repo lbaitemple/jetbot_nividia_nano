@@ -17,3 +17,9 @@ sudo -H pip3 install torch-1.10.0a0+git36449ea-cp36-cp36m-linux_aarch64.whl
 # clean up
 rm torch-1.10.0a0+git36449ea-cp36-cp36m-linux_aarch64.whl
 sudo -H pip3 install torchvision
+
+### torch2rt
+cd ~
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+cd ~/torch2trt
+sudo python3 setup.py install
