@@ -110,7 +110,10 @@ sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update
 ```
-
+### in drone_ws
+```
+rosdep install --from-paths src --ignore-src --rosdistro melodic    -r -y
+```
 ### D435
 
 https://github.com/IntelRealSense/librealsense/releases
