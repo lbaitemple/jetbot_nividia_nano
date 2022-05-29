@@ -41,6 +41,7 @@ git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 bash ./resetos_451.sh 
 ```
+You should reboot and have the change to be made and reconnect to the device and start the step 3.
 
 ### step3: install D435
 ```
