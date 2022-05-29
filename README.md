@@ -26,12 +26,30 @@ You will need to make sure which version of the image is installed because we ca
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-11-now-available/72048
 
-### add swap
+### step 1: add swap
 ```
 git clone https://github.com/JetsonHacksNano/resizeSwapMemory
 cd resizeSwapMemory
  ./setSwapMemorySize.sh -g 8
  sudo reboot
+```
+### Reboot and setup the rest of system
+
+### step 2: reset OS
+```
+git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
+cd jetbot
+bash ./resetos.sh
+```
+
+### step3: install D435
+```
+bash ./install_d435.sh
+```
+When you see the compiling message, you can open the second terminal using ssh and start the 4th step
+```
+cd ~/jetbot
+bash ./install_all.sh
 ```
 
 ### check version
