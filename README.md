@@ -39,7 +39,7 @@ cd resizeSwapMemory
 ```
 git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
-bash ./resetos.sh
+bash ./resetos_451.sh 
 ```
 
 ### step3: install D435
