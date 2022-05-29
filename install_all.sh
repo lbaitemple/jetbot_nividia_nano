@@ -10,5 +10,5 @@ sudo usermod -aG video jetbot
 bash ./install_torch.sh
 bash ./jetbot_stats.sh
 bash ./jupyter.sh
-#bash ./install_ros.sh
+bash ./install_ros.sh
 #bahs ./install_d435.sh
