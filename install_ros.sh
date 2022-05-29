@@ -22,6 +22,12 @@ sudo apt update
 sudo apt install python3-colcon-common-extensions -y
 sudo pip3 install imageio
 
+sudo apt-get install python3-pip
+sudo pip3 install -U rosdep
+sudo rosdep init
+rosdep update
+ 
+ 
 ## update cmake
 #sudo apt install -y software-properties-common lsb-release 
 #sudo apt clean all
