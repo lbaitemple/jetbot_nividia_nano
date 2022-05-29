@@ -1,10 +1,11 @@
+sudo apt-get install -y  libssl-dev libglfw3 libglfw3-dev libxinerama-dev libxcursor-dev
+
 cd ~
 wget https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.49.0.zip
 unzip v2.49.0.zip
 cd ~/librealsense-2.49.0
 CUDACXX=/usr/local/cuda-10.2/bin/nvcc
 
-sudo apt-get install -y  libssl-dev libglfw3 libglfw3-dev libxinerama-dev libxcursor-dev
 
 
 mkdir build
