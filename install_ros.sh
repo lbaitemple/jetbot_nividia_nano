@@ -16,6 +16,8 @@ sudo apt install -y ros-melodic-desktop --fix-missing
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 echo "export ROS_PYTHON_VERSION=3" >> ~/.bashrc
 source ~/.bashrc
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt update
 sudo apt install python3-colcon-common-extensions -y
 sudo pip3 install imageio
