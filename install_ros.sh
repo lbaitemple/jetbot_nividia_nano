@@ -6,7 +6,7 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 
 sudo apt update
 sudo apt install ros-melodic-desktop -y
-sudo apt autoremove -y
+#sudo apt autoremove -y
 sudo apt-get install python3 python3-dev python3-pip python3-yaml -y
 sudo pip3 install catkin_pkg empy rospkg
 sudo apt install python3-pip python3-all-dev python3-rospkg python3-catkin-pkg -y
