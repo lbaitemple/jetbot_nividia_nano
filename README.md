@@ -48,6 +48,7 @@ You should reboot and have the change to be made and reconnect to the device and
 bash ./install_d435.sh
 ```
 When you see the compiling message, you can open the second terminal using ssh and start the 4th step
+### step4: install All (stats, jupter notebook and ROS Melodic - with python3)
 ```
 cd ~/jetbot
 bash ./install_all.sh
