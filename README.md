@@ -54,6 +54,13 @@ cd ~/jetbot
 bash ./install_all.sh
 ```
 
+
+### Complete installation and reboot the system
+After reboot, you can check realsense camera
+#### check ws
+```
+cd ~/jetbot/d435
+```
 ### check version
 ```
 sudo apt-cache show nvidia-jetpack
