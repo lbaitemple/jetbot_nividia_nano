@@ -4,7 +4,8 @@ sudo apt install python3-pip python3-pil -y
 sudo apt-get install python3-pip libjpeg-dev libopenblas-dev libopenmpi-dev libomp-dev -y
 sudo -H pip3 install future
 sudo pip3 install -U --user wheel mock pillow
-sudo -H pip3 install testresources
+sudo -H pip3 install testresources 
+sudo pip3 install packaging
 # above 58.3.0 you get version issues
 sudo -H pip3 install setuptools==58.3.0
 sudo -H pip3 install Cython
