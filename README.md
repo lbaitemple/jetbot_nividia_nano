@@ -65,6 +65,9 @@ cd ~/jetbot/d435
 ```
 sudo apt-cache show nvidia-jetpack
 ```
+### boot from usb for speed 
+you can get a fast usb drive ()
+https://jetsonhacks.com/2021/03/10/jetson-nano-boot-from-usb/
 
 ### Reboot and setup the rest of system
 ```
