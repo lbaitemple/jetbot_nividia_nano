@@ -17,7 +17,7 @@ remote in using ssh jetbot@ipaddress
 ### Installl fan control github
 ```
 cd ~
-git clone -b ece3432 https://github.com/Pyrestone/jetson-fan-ctl
+git clone https://github.com/Pyrestone/jetson-fan-ctl
 cd jetson-fan-ctl
 sudo ./install.sh
 ```
