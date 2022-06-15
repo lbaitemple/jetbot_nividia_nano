@@ -62,7 +62,7 @@ turnon
 ```
 For the other terminal, you can run logitech controller using
 ```
-gamepad 
+gamepad  
 ```
 or run with waveshare controller using
 ```
