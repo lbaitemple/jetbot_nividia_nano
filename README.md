@@ -4,10 +4,10 @@ AWS Jetbot Setup
 ### cp image to SD card using etcher
 https://www.balena.io/etcher/
 
-#### download image (JetPack 4.5)  from Nivida
+#### download image (JetPack 4.5.1)  from Nivida
 https://developer.nvidia.com/embedded/jetpack
 
-https://developer.nvidia.com/jetson-nano-2gb-sd-card-image
+https://developer.nvidia.com/embedded/l4t/r32_release_v5.1/r32_release_v5.1/jeston_nano_2gb/jetson-nano-2gb-jp451-sd-card-image.zip
 
 ### setup ubuntu and wifi after you load in sd card
 setup username as jetbot, system as jetbot, password as jetbot (or something else)
