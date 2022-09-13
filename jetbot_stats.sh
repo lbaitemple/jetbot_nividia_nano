@@ -15,8 +15,8 @@ cd ~/jetbot
 sudo python3 setup.py install
 sudo pip3 install packaging ipywidgets
 sudo -H pip3 install --upgrade pip
-#sudo -H pip3 install Adafruit_SSD1306
-sudo python3 -m pip install Adafruit_SSD1306
+sudo -H pip3 install Adafruit_SSD1306
+
 sudo python3 -m pip install opencv-python
 
 # create jetbot_stats service
