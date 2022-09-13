@@ -36,7 +36,7 @@ cd ~
 git clone  -b ece3432-ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 
-bash ./pytorch.sh
+bash ./install_torch.sh
 
 bash ./jetbot_stats.sh
 
