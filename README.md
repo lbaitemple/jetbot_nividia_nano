@@ -53,6 +53,7 @@ sudo -H python3 -m pip install inputs
 
 cp -r ~/jetbot/aws/robot_ws/ ~/
 cd ~/robot_ws
+rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 
 cat bashrc >> ~/.bashrc
