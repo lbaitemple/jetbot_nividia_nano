@@ -1,5 +1,5 @@
 sudo apt update && sudo apt upgrade -y
-sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
+sudo apt-get install libzmq3-dev  python3-smbus libffi-dev curl cmake -y
 sudo apt install python3-pip python3-pil -y
 sudo apt-get install python3-pip libjpeg-dev libopenblas-dev libopenmpi-dev libomp-dev -y
 sudo -H pip3 install future
