@@ -16,21 +16,14 @@ class OpenCvGstCamera(CameraBase):
     fps = traitlets.Integer(default_value=30).tag(config=True)
     capture_width = traitlets.Integer(default_value=816).tag(config=True)
     capture_height = traitlets.Integer(default_value=616).tag(config=True)
-    usb = traitlets.Integer(default_value=-1).tag(config=True)
-    url = traitlets.Unicode(default_value="").tag(config=True)
 
     def __init__(self, *args, **kwargs):
         self.value = np.empty((self.height, self.width, 3), dtype=np.uint8)
         super().__init__(self, *args, **kwargs)
 
         try:
-            if (self.url==""):    # check url first
-                if (self.usb ==-1):
-                    self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
-                else:                
-                    self.cap = cv2.VideoCapture(self.usb)
-            else:
-                self.cap = cv2.VideoCapture(self.url)
+            self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
+
             re, image = self.cap.read()
 
             if not re:
