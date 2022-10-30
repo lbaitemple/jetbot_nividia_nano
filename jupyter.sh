@@ -1,7 +1,5 @@
-
-sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
-#!/bin/bash
 # Animesh Bala Ani (ANI717)
+sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 
 # exit immediately if a command exits with a non-zero status.
 set -e
