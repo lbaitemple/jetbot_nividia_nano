@@ -87,7 +87,8 @@ sudo apt autoremove -y
 ```
 sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
 sudo apt install python3-pip python3-pil -y
-sudo pip3 install packaging ipywidgets
+sudo pip3 install packaging 
+sudo pip3 install ipywidgets
 sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 
  
