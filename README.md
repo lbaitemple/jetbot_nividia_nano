@@ -100,7 +100,7 @@ cd ~
 git clone  -b ece3432 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 
-bash ./pytorch.sh
+bash ./install_torch.sh
 
 bash ./jetbot_stats.sh
 echo "export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1" >> ~/.bashrc
