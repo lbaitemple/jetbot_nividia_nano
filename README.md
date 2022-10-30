@@ -41,9 +41,6 @@ sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 sudo usermod -aG i2c $USER
 sudo usermod -a -G video jetbot
 
-cd ~
-git clone  -b ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
-cd jetbot
 
 bash ./install_torch.sh
 
