@@ -33,7 +33,7 @@ sudo usermod -aG i2c $USER
 sudo usermod -a -G video jetbot
 
 cd ~
-git clone  -b ece3432-ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
+git clone  -b ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 
 bash ./install_torch.sh
