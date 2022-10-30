@@ -23,23 +23,14 @@ sudo ./install.sh
 
 ### Reboot and setup the rest of system
 ```
+sudo apt update && sudo apt upgrade -y
+
 git clone  -b ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
 bash ./resetos_451.sh 
 
-sudo apt update && sudo apt upgrade -y
 ```
-If you see dpkg: error processing package nvidia-l4t-bootloader (--configure):
-```
-sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/backup/
-sudo mkdir /var/lib/dpkg/info/
-sudo apt-get update
-sudo apt-get -f install
-sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/backup/
-sudo rm -rf /var/lib/dpkg/info
-sudo mv /var/lib/dpkg/backup/ /var/lib/dpkg/info/
-sudo apt autoremove -y
-```
+
 
 ```
 sudo apt-get install libzmq3-dev  python3-smbus curl cmake -y
