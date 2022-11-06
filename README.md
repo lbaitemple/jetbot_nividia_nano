@@ -39,7 +39,7 @@ sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 
 
 sudo usermod -aG i2c $USER
-sudo usermod -a -G video jetbot
+sudo usermod -a -G video $USER
 
 
 bash ./install_torch.sh
