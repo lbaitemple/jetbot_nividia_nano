@@ -19,7 +19,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 
 # install ros2 dashing (ubuntu 18.04)
 sudo apt-get update
-sudo apt-get install -y ros-foxy-desktop python3-colcon-common-extensions python-rosdep
+sudo apt-get install -y ros-foxy-desktop python3-colcon-common-extensions python3-rosdep
 sudo rosdep init
 rosdep update
 
