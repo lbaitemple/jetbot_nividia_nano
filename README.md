@@ -32,6 +32,8 @@ sudo python3 -m pip install git+https://github.com/ipython/traitlets@4.x
 sudo usermod -aG i2c $USER
 sudo usermod -a -G video jetbot
 
+sudo pip3 install --upgrade setuptools
+
 cd ~
 git clone  -b ece3432-ros2 https://github.com/lbaitemple/jetbot_nvidia_nano/ jetbot
 cd jetbot
